@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-lnumber = number[-1]
+lnumber = (str(number))[-1]
+lnumber = int(lnumber)
 if lnumber == 0:
     print("Last digit of", number, "is", lnumber, "and is 0")
 elif lnumber > 5:
