@@ -5,5 +5,4 @@ if __name__ == "__main__":
     result = 0
     for i in range(0, len(argv)):
         result += int(argv[i])
-    print(result, end = '\n')
-
+    print(result, end='\n')
