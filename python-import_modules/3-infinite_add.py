@@ -3,7 +3,7 @@ import sys
 if __name__ == "__main__":
     argv = sys.argv
     result = 0
-    for i in range(0, len(argv) + 1):
+    for i in argv:
         result += int(i)
     print(result)
 
