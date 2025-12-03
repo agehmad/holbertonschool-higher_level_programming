@@ -7,5 +7,5 @@ if __name__ == "__main__":
         print("0 arguments.")
     elif lenarg > 0:
         print("{} arguments:".format(lenarg))
-    for i in range(1, lenarg + 1):
-        print("{}: {}".format(i, argv[i]))
+    for i in range(0, lenarg):
+        print("{}: {}".format(i+1, argv[i]))
