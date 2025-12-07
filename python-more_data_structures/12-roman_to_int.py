@@ -10,7 +10,7 @@ def roman_to_int(roman_string):
         if i < n - 1:
             next_value = alphabet[roman_string[i + 1]]
         else:
-            next_value = 0  
+            next_value = 0
         if current_value < next_value:
             result -= current_value
         else:
