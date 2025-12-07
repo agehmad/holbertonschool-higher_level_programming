@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def simple_delete(a_dictionary, key=""):
-    if (key in a_dictionary) == False:
+    if key not in a_dictionary:
         pass
     else:
         del a_dictionary[key]
