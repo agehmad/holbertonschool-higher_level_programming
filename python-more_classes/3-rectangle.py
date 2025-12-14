@@ -57,5 +57,5 @@ class Rectangle:
         else:
             for i in range(self.__height):
                 for j in range(self.__width):
-                    print('#')
+                    print('#', end='')
                 print()
