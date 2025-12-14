@@ -53,9 +53,13 @@ class Rectangle:
 
     def __str__(self):
         if self.__height == 0 or self.__width == 0:
-            print()
+            return ''
         else:
+            result = ''
             for i in range(self.__height):
-                print('#' * self.__width)
+                esult += '#' * self.__width
+                if i < self.__height - 1:  # Sonuncu sətirdən sonra \n əlavə etmə
+                    result += '\n'
+        return result  # Bütün sətirlər bitdikdən SONRA return et
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height) 
