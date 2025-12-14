@@ -9,8 +9,8 @@ class Rectangle:
     Docstring for Rectangle
     """
     def __init__(self, width=0, height=0):
-        self.width = width
-        self.height = height
+        self.set_width(width)
+        self.set_height(height)
     def set_width(self, value):
         if value < 0:
             raise ValueError("width must be >= 0")
