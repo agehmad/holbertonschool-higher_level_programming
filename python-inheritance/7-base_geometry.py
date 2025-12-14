@@ -17,4 +17,4 @@ class BaseGeometry:
         elif value <= 0:
             raise ValueError("<name> must be greater than 0")
         else:
-            self.value = value
+            self.__value = value
