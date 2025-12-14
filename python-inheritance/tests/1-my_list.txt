@@ -1,1 +1,7 @@
-fgd
+>>>mlist = MyList()
+>>>mlist.append(1)
+>>>mlist.append(2)
+>>>mlist.append(3)
+>>>mlist.append(4)
+>>>mlist.print_sorted()
+[1, 2, 3, 4]
