@@ -9,5 +9,4 @@ class MyList(list):
     Docstring for MyList
     """
     def print_sorted(self):
-        list.sort()
-        return list
+        print(sorted(self))
