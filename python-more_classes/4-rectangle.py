@@ -57,7 +57,7 @@ class Rectangle:
         else:
             result = ''
             for i in range(self.__height):
-                esult += '#' * self.__width
+                result += '#' * self.__width
                 if i < self.__height - 1:  # Sonuncu sətirdən sonra \n əlavə etmə
                     result += '\n'
         return result  # Bütün sətirlər bitdikdən SONRA return et
