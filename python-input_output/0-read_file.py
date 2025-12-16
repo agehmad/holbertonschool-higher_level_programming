@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Module for reading and printing UTF-8 text files"""
+
+
 def read_file(filename=""):
     """
     Docstring for read_file
