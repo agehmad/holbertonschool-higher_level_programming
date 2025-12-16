@@ -11,6 +11,6 @@ def write_file(filename="", text=""):
     :param filename: Description
     :param text: Description
     """
-    with open(filename, 'w', encoding='utf-8') as a_file:
+    with open(filename, mode='w', encoding='utf-8') as a_file:
         a_file.wtite(text)
     return len(text)
