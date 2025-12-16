@@ -9,4 +9,4 @@ def read_file(filename=""):
     :param filename: Description
     """
     with open(filename, 'r', encoding='utf-8') as a_file:
-        print(a_file.read())
+        print(a_file.read(), end='')
