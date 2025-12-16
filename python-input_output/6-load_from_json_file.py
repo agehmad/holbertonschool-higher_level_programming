@@ -9,5 +9,5 @@ def load_from_json_file(filename):
 
     :param filename: Description
     """
-    with open(filename) as a_file:
+    with open(filename, encoding='utf-8') as a_file:
         data = json.load(a_file)
