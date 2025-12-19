@@ -1,2 +1,1 @@
-import locale
-locale.getpreferredencoding()
+raise TypeError("tip error")
