@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+# !/usr/bin/python3
 """
 Docstring for python-input_output.12-pascal_triangle
 """
@@ -21,5 +21,4 @@ def pascal_triangle(n):
                 newlist.append(triangle[i-1][j] + triangle[i-1][j+1])
             newlist.append(1)
             triangle.append(newlist)
-        for a in triangle:
-            print(a)
+        return triangle
