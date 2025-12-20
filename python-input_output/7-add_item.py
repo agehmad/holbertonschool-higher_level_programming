@@ -5,25 +5,14 @@ Docstring for python-input_output.7-add_item
 import json
 import sys
 
-def load_from_json_file(filename):
-    """
-    Docstring for load_from_json_file
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-    :param filename: Description
-    """
-    with open(filename, encoding='utf-8') as a_file:
-        data = json.load(a_file)
-    return data
+try: 
+    items = load_from_json_file("add_item.json")
+except FileNotFoundError: 
+    items = []
 
-def save_to_json_file(my_obj, filename):
-    """
-    Docstring for save_to_json_file
+items.extend(sys.argv[1:])
 
-    :param my_obj: Description
-    :param filename: Description
-    """
-
-    with open(filename, mode='w', encoding='utf-8') as a_file:
-        a_file.write(json.dumps(my_obj))
-
-save_to_json_file(sys.argv, add_item.json)
+save_to_json_file(items, "add_item. json")
