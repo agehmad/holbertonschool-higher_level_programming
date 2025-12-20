@@ -13,8 +13,8 @@ def pascal_triangle(n):
     if n <= 0:
         return []
     else:
-        triangle = [[1], [1,1]]
-        for i in range(2, n):
+        triangle = [[1]]
+        for i in range(1, n):
             newlist = []
             newlist.append(1)
             for j in range(0, i-1):
