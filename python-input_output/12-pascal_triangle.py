@@ -1,4 +1,4 @@
-# !/usr/bin/python3
+#!/usr/bin/python3
 """
 Docstring for python-input_output.12-pascal_triangle
 """
